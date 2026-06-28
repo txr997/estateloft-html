@@ -1,0 +1,189 @@
+/* 
+    projects-1-start
+*/
+.el-projects-2 {
+    &-area {
+        margin-left: 16px;
+        margin-right: 16px;
+        background-color: #F5F5F5;
+        border-radius: 24px;
+
+        @media #{$lg,$md,$xs} {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    &-wrap {
+        max-width: 952px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &-card {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+
+        @media #{$xs} {
+            grid-template-columns: 1fr;
+        }
+
+        .img-elm {
+            height: 458px;
+            border-radius: 10px;
+
+            @media #{$xs} {
+                height: 350px;
+            }
+
+            @media #{$sm} {
+                height: 458px;
+            }
+        }
+
+        .content-wrap {
+            background-color: #F5F5F5;
+            padding: 32px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+
+            @media #{$md,$xs} {
+                padding: 32px 10px;
+            }
+        }
+
+        .card-tag {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-elm {
+                font-size: 15px;
+                background: #fff;
+                color: #000;
+                border-radius: 5px;
+                padding: 7px 13px;
+
+                &:nth-child(2) {
+                    background-color: var(--el-clr-pr-1);
+                    color: #fff;
+                }
+            }
+        }
+
+        .title {
+            margin-top: auto;
+            font-size: 24px;
+            transition: .5s var(--el-cube-1);
+
+            &:hover {
+                color: var(--el-clr-pr-1);
+                transform: translateY(-3px);
+            }
+            @media #{$xs} {
+                font-size: 20px;
+            }
+        }
+        .location {
+            font-size: 16px;
+        }
+        
+        .card-features {
+            margin-bottom: auto;
+            border: 1px solid rgb(0 0 0 / 10%);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 16px;
+            margin-top: 32px;
+
+            &-elm {
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                &:nth-child(1) {
+                    padding-right: 16px;
+                    border-right: 1px solid #B3B3B3;
+                }
+
+                &:nth-child(3) {
+                    padding-right: 16px;
+                    border-right: 1px solid #B3B3B3;
+                }
+            }
+        }
+
+        
+        .price-x-action-link {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+
+        .price {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .action-link {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            &-elm {
+                width: 44px;
+                height: 44px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                font-size: 20px;
+                color: #343330;
+                transition: .5s var(--el-cube-1);
+
+                &:hover {
+                    background-color: var(--el-clr-pr-1);
+                    color: #fff;
+                }
+            }
+        }
+        
+        
+    }
+
+
+    
+}
+
+.el-projects-2-card {
+    @media #{$over,$xxxl,$xxl,$xl} {
+        position: sticky;
+        top: 100px;
+    }
+
+}
+
+
+/* 
+    projects-1-end
+*/

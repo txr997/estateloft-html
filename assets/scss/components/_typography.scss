@@ -1,0 +1,69 @@
+/* 
+    typography-start
+*/
+
+.el-p-1 {
+    font-family: var(--el-font-1);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--el-clr-p-1);
+    line-height: 140%;
+    margin-bottom: 0;
+}
+
+
+.el-h-1 {
+    font-family: var(--el-font-1);
+    font-weight: 600;
+    color: #000;
+    line-height: 120%;
+    margin-bottom: 0;
+}
+
+.el-subtitle-1 {
+    font-family: var(--el-font-1);
+    display: inline-flex;
+    color: var(--el-clr-pr-1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.el-sec-title-1 {
+    font-family: var(--el-font-1);
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 48px;
+    color: #000;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+
+    
+    @media #{$xl} {
+        font-size: 42px;
+    }
+    
+    @media #{$lg} {
+        font-size: 38px;
+    }
+
+    @media #{$md} {
+        font-size: 34px;
+    }
+
+    @media #{$xs} {
+        font-size: 28px;
+    }
+
+    @media #{$sm} {
+        font-size: 32px;
+    }
+}
+
+
+/* 
+    typography-end
+*/
+

@@ -1,0 +1,18 @@
+/* 
+    custom-container-start
+*/
+
+@media (min-width: 1600px) {
+    .container{
+        &.el-container-1 {
+            max-width: 1464px;
+        }
+        &.el-container-3 {
+            max-width: 1584px;
+        }
+    }
+}
+
+/* 
+    custom-container-end
+*/

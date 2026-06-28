@@ -1,0 +1,52 @@
+/* 
+    clients-1-start
+*/
+.el-clients-1 {
+    &-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 55px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        .text {
+            flex: 0 0 auto;
+
+            @media #{$md,$xs} {
+                flex: unset;
+            }
+            
+        }
+
+        .has-clr {
+            color: var(--el-clr-pr-1);
+        }
+
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 100%);
+
+            @media #{$md,$xs} {
+                display: none;
+            }
+
+            &:nth-child(1) {
+                background: linear-gradient(-90deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 100%);
+            }
+        }
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-height: 90px;
+    }
+}
+
+/* 
+    clients-1-end
+*/

@@ -1,0 +1,105 @@
+/* 
+    team-1-start
+*/
+.el-team-1 {
+    &-sec-title {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            max-width: 500px;
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &-card {
+        flex: 1 1 300px;
+        max-width: 351px;
+        width: 100%;
+        height: 465px;
+        border-radius: 12px;
+
+        .content-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            width: calc(100% - 24px);
+            border-radius: 12px;
+            margin: 12px;
+            padding: 20px 32px;
+            text-align: center;
+            transform: translateY(115%);
+            transition: .5s var(--el-cube-1);
+
+            @media #{$xl,$lg,$md,$xs} {
+                padding: 20px 20px;
+            }
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+
+            transition: .5s var(--el-cube-1);
+
+            &:hover {
+                transform: translateY(2px);
+                color: var(--el-clr-pr-1);
+            }
+        }
+        .disc {
+            font-size: 16px;
+            border-bottom: 1px dashed rgb(81 81 81 / 50%);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .social-link {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            &-elm {
+                width: 48px;
+                height: 48px;
+                background-color: #F5F5F5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                border-radius: 12px;
+                color: var(--el-clr-pr-1);
+                transition: .5s var(--el-cube-1);
+
+                &:hover {
+                    background-color: var(--el-clr-pr-1);
+                    color: #fff;
+                }
+            }
+        }
+
+        &:hover {
+            .content-wrap {
+                transform: translateY(0);
+            }
+        }
+        
+    }
+}
+
+
+
+/* 
+    team-1-end
+*/

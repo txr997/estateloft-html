@@ -1,0 +1,106 @@
+/* 
+    step-2-start
+*/
+.el-step-2 {
+    &-wrap {
+        display: grid;
+        gap: 88px;
+        grid-template-columns: 1fr 1.1fr;
+        align-items: center;
+
+        @media #{$xl,$lg} {
+            gap: 50px;
+            grid-template-columns: 1fr 1fr;
+        
+        }
+
+        @media #{$md,$xs} {
+            gap: 50px;
+            grid-template-columns: 1fr;
+        
+        }
+    }
+
+    &-img {
+        height: 762px;
+        border-radius: 12px;
+
+        @media #{$md,$xs} {
+            height: auto;
+        }
+    }
+
+    &-progress {
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+
+
+
+        &-single {
+            display: flex;
+            gap: 24px;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                background-color: #F5F5F5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 auto;
+                border-radius: 50%;
+                font-size: 22px;
+                color: var(--el-clr-pr-1);
+                position: relative;
+                z-index: 1;
+                transition: .5s var(--el-cube-1);
+
+                &::after {
+                    content: "";
+                    width: 2px;
+                    height: 80%;
+                    position: absolute;
+                    top: 110%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: linear-gradient(0deg, rgba(87, 88, 214, 0) 0%, #5758D6 100.14%);
+                }
+            }
+
+            .title {
+                font-size: 24px;
+            }
+            .number {
+                font-size: 19px;
+                font-weight: 700;
+                opacity: 50%;
+                transition: .5s var(--el-cube-1);
+            }
+
+            .title-x-number {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+
+            &:hover {
+                .icon {
+                    background-color: var(--el-clr-pr-1);
+                    color: #fff;
+                }
+                .number {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+/* 
+    step-2-end
+*/

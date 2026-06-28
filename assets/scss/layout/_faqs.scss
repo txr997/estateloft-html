@@ -1,0 +1,109 @@
+/* 
+    faqs-2-start
+*/
+
+.el-accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+
+    @media #{$md,$xs} {
+        grid-template-columns: 1fr;
+    }
+
+    .item-col {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &-item {
+        background: #F5F5F5;
+        outline: 1px solid rgba(0, 0, 0, 0.08);
+        border: 6px solid #fff;
+        border-radius: 12px;
+
+        .item-title {
+            background: transparent;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 16px 16px;
+            padding-left: 20px;
+            text-align: left;
+            transition: 0.2s;
+    
+
+            .icon {
+                margin-left: auto;
+                transition: 0.2s;
+                font-size: 18px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 8px;
+                flex: 0 0 auto;
+
+                i {
+                    transition: 0.2s;
+                }
+            }
+    
+            &:is(:not(.collapsed)) {
+                .icon {
+                    i {
+                        &::before {
+                            content: "\f068";
+                        }
+                    }
+                }
+
+            }
+
+            &:is(.collapsed) {
+                &:hover {
+                }
+            }
+
+        }
+        
+        .item-disc {
+            padding: 25px 20px;
+            padding-top: 0;
+        }
+
+        .accordion-collapse {
+            &:is(.show) {
+
+            }
+        } 
+
+        &:is(.active) {
+        }
+
+    }
+
+    
+}
+
+.el-faqs-2 {
+    &-accordion {
+        background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+        border-radius: 32px;
+        padding: 60px 60px;
+
+        @media #{$lg,$md,$xs} {
+            padding: 60px 20px;
+        }
+    }
+}
+/* 
+    faqs-2-end
+*/
