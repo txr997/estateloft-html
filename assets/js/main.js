@@ -315,6 +315,53 @@ if($(".el-footer-2-big-title").length) {
 
 
 
+// projects-3-slider
+var el_p3_slider = new Swiper(".el_p3_slider", {
+	loop: true,
+	speed: 800,
+	spaceBetween: 24,
+	slidesPerView: 3,
+	centeredSlides: true,
+    roundLengths: true,
+
+	// autoplay: { delay: 5000 },
+
+	navigation: {
+		nextEl: ".el_p3_slider_next",
+		prevEl: ".el_p3_slider_prev",
+	},
+	pagination: {
+        el: ".el_p3_slider_pagination",
+        type: "fraction",
+    },
+	scrollbar: {
+        el: ".el_p3_slider_fraction",
+        hide: true,
+    },
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+
+		1400: {
+			slidesPerView: 2,
+		},
+
+		1600: {
+			slidesPerView: 2,
+		},
+
+		1800: {
+			slidesPerView: 3,
+		},
+	}
+	
+});
+
+
+
+
 
 
 })(jQuery);

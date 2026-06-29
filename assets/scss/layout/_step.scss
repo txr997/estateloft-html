@@ -104,3 +104,119 @@
 /* 
     step-2-end
 */
+
+/* 
+    step-3-start
+*/
+.el-step-3 {
+    &-sec-title {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1296px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .left {
+            max-width: 630px;
+        }
+        
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    
+    &-card {
+        display: flex;
+        background-color: #F5F5F5;
+        gap: 32px;
+        overflow: hidden;
+        padding: 40px 40px;
+        border-radius: 16px;
+        max-width: 120px;
+        transition: .5s;
+        width: 100%;
+
+        @media #{$md,$xs} {
+            max-width: 100%;
+
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+
+        .number {
+            font-size: 120px;
+            line-height: 1;
+            color: var(--el-clr-pr-1);
+            margin-top: -10px;
+            transition: .5s;
+
+            @media #{$md,$xs} {
+                font-size: 80px;
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            color: #fff;
+            @media #{$md,$xs} {
+                color: #000;
+            }
+
+        }
+
+        .disc {
+            color: #fff;
+            @media #{$md,$xs} {
+                color: #000;
+            }
+        }
+
+        .content-wrap {
+            width: 596px;
+            flex: 0 0 auto;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media #{$xl,$lg} {
+                width: 286px;
+            }
+
+            @media #{$md,$xs} {
+                min-height: auto;
+                gap: 40px;
+                width: 100%;
+                flex: unset;
+            }
+        }
+
+        &:is(.active) {
+            @media #{$over,$xxxl,$xxl,$xl,$lg} {
+                max-width: 860px;
+                background-color: var(--el-clr-pr-1);
+    
+                @media #{$xl,$lg} {
+                    max-width: 500px;
+                }
+    
+                .number {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/* 
+    step-3-end
+*/

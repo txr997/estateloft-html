@@ -1,0 +1,30 @@
+/* 
+    price-3-start
+*/
+.el-price-3 {
+    &-sec-title {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .left {
+            max-width: 510px;
+        }
+
+        .right {
+            max-width: 410px;
+        }
+
+        .sec-disc {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+/* 
+    price-3-end
+*/
