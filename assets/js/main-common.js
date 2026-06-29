@@ -460,6 +460,25 @@ if($(".wa_hover_class_toggle2").length) {
     });
 };
 
+// hover-toggle-class for .wa_hover_class_toggle3
+if($(".wa_hover_class_toggle3").length) {
+    const wa_hover_class3 = document.querySelectorAll(".wa_hover_class_toggle3");
+    const defaultActive3 = document.querySelector(".wa_hover_class_toggle3.active");
+    wa_hover_class3.forEach(card => {
+        card.addEventListener("mouseenter", function () {
+            wa_hover_class3.forEach(c => c.classList.remove("active"));
+            this.classList.add("active");
+        });
+        card.addEventListener("mouseleave", function () {
+            wa_hover_class3.forEach(c => c.classList.remove("active"));
+            if (defaultActive3) {
+                defaultActive3.classList.add("active");
+            }
+
+        });
+    });
+};
+
 
 // wa-bg-parallax
 gsap.utils.toArray(".wa_parallax_bg").forEach(element => {

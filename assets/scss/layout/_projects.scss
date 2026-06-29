@@ -262,6 +262,12 @@
                 font-size: 22px;
                 color: var(--el-clr-pr-1);
                 flex: 0 0 auto;
+                transition: .5s var(--el-cube-1);
+
+                &:hover {
+                    background-color: var(--el-clr-pr-1);
+                    color: #fff;
+                }
             }
         }
         

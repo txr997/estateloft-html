@@ -103,3 +103,17 @@
 /* 
     team-1-end
 */
+
+/* 
+    team-3-start
+*/
+.el-team-1-area {
+    &:is(.has-team-3) {
+        .el-team-1-card {
+            max-width: 380px;
+        }
+    }
+}
+/* 
+    team-3-end
+*/

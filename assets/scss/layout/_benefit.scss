@@ -1,0 +1,90 @@
+/* 
+    benefit-3-start
+*/
+.el-benefit-3 {
+    &-area {
+        background-color: #F5F5F5;
+    }
+
+    &-sec-title {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .left {
+            max-width: 590px;
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-left {
+        max-width: 768px;
+        flex: 1 1 400px;
+
+        .el-about-1-counter-card {
+            max-width: 378px;
+        }
+    }
+
+    &-img {
+        height: 360px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+    }
+
+
+    &-card {
+        max-width: 636px;
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-single {
+            background-color: #fff;
+            padding: 40px 40px;
+            display: flex;
+            gap: 20px;
+            border-radius: 16px;
+
+            @media #{$xl,$lg,$md,$xs} {
+                padding: 40px 20px;
+            }
+
+            .icon {
+                width: 36px;
+                height: 36px;
+                background-color: var(--el-clr-pr-1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                flex: 0 0 auto;
+            }
+
+            .title {
+                font-size: 24px;
+                margin-bottom: 20px;
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+/* 
+    benefit-3-end
+*/

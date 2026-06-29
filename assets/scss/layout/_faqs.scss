@@ -107,3 +107,33 @@
 /* 
     faqs-2-end
 */
+/* 
+    faqs-3-start
+*/
+.el-faqs-3 {
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 60px;
+
+        @media #{$lg,$md,$xs} {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-img {
+        height: 472px;
+        border-radius: 12px;
+    }
+
+    &-accordion {
+        .el-accordion {
+            grid-template-columns: 1fr;
+
+
+        }
+    }
+}
+/* 
+    faqs-3-end
+*/
