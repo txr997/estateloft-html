@@ -307,6 +307,7 @@
             padding: 32px 32px;
             max-width: 504px;
             flex: 1 1 385px;
+            transition: .5s var(--el-cube-1);
 
 
             .author {
@@ -346,6 +347,10 @@
             .social-icon {
                 font-size: 24px;
                 color: #a0a0a0;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
             }
         }
     }

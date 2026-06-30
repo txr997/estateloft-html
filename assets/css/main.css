@@ -3349,6 +3349,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .el-features-3-card .disc {
   font-size: 16px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.el-features-3-card:hover .icon img {
+  animation: pulse 0.5s linear infinite;
 }
 
 /* 
@@ -4490,6 +4496,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 32px 32px;
   max-width: 504px;
   flex: 1 1 385px;
+  transition: 0.5s var(--el-cube-1);
 }
 .el-testimonial-3-wrap .el-testimonial-1-card .author {
   border-top: none;
@@ -4522,6 +4529,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 .el-testimonial-3-wrap .el-testimonial-1-card .social-icon {
   font-size: 24px;
   color: #a0a0a0;
+}
+.el-testimonial-3-wrap .el-testimonial-1-card:hover {
+  transform: translateY(-5px);
 }
 
 /* 
@@ -4889,6 +4899,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 .el-blog-3-card .title {
   font-size: 24px;
   margin-bottom: 12px;
+  transition: 0.5s var(--el-cube-1);
+}
+.el-blog-3-card .title:hover {
+  color: var(--el-clr-pr-1);
+  transform: translateY(3px);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .el-blog-3-card .title {
@@ -5741,6 +5756,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .el-benefit-3-card-single .title {
     font-size: 20px;
+  }
+}
+@media (min-width: 1800px), only screen and (min-width: 1600px) and (max-width: 1799px), only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .el-benefit-3-left-sticky {
+    position: sticky;
+    top: 100px;
   }
 }
 

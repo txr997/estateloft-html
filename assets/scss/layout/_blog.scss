@@ -244,6 +244,12 @@
         .title {
             font-size: 24px;
             margin-bottom: 12px;
+            transition: .5s var(--el-cube-1);
+
+            &:hover {
+                color: var(--el-clr-pr-1);
+                transform: translateY(3px);
+            }
 
             @media #{$xl,$lg,$md,$xs} {
                 font-size: 20px;

@@ -81,7 +81,12 @@
         }
     }
     
-    
+    &-left-sticky {
+        @media #{$over,$xxxl,$xxl} {
+            position: sticky;
+            top: 100px;
+        }
+    }
     
 }
 
